@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+@layer base {
+    html,
+    body,
+    #root {
+        height: 100%;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: font-sans;
+        letter-spacing: -0.03em;
+    }
+
+
+    body {
+        @apply antialiased bg-[#F5F5F5];
+    }
+}
+
+
+@layer components{
+    
+
+   .russoOne {
+        font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .montserrat{
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 0%;
+        line-height: 100%;
+
+    }
+
+    .header{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 8%;
+        border-bottom: solid rgb(204, 202, 202) 2px;
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 32px 10px 32px;
+    } 
+    .buttonEntrar{
+        width: 188px;
+        height: 40px;
+        background-color: #2B2B2B;
+        border-radius: 16px;
+
+        color: white;
+    }
+    .buttonEntrarCom{
+        background-color: #2B2B2B;
+        width: 69px;
+        height: 69px;
+        border-radius: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .boxProduto{
+       box-shadow: 0px 2px 4px #00000014;
+       background-color:#F5F5F5;
+       border-radius:15px;
+       flex-shrink: 0;
+
+       display: flex;
+       flex-direction: column;
+
+       margin-right: 20px;
+    }
+    .container{
+        align-self: self-start;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px ;
+        padding-bottom: 15px;
+        border-top: solid 2px #7575759d;
+
+    }
+    .carrossel-container {
+        overflow-x: hidden;
+        cursor: grab;
+    }
+
+    .menuHamburguer{
+        z-index: 10;
+        align-self: self-start;
+        position: fixed;
+
+        width: 60%;
+        height: 90%;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: #F5F5F5;
+        box-shadow: 5px 5px 4px #0000002d;
+    }
+
+    .menuHamburguerTexto{
+        border-bottom: solid 2px #7575759d;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+    }
+
+        
+
+} 
